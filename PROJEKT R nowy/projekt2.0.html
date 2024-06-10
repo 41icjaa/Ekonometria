@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang xml:lang>
   <head>
-    <title>Analiza przestrzenna dróg rowerowych z podziałem na województwa w 2021 r.</title>
+    <title>Analiza przestrzenna dróg rowerowych</title>
     <meta charset="utf-8" />
     <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -671,7 +671,7 @@ class: center, middle, inverse, title-slide
 
 
 
-## Wybór zjawiska i określenie jego determinantu
+## Wybór zjawiska i determinant
 &lt;small&gt;
 Celem projektu jest sprawdzenie czy długość dróg rowerowych rozkłada się przestrzennie, jeśli tak to dobrany zostanie model przestrzenny, który w najlepszy sposób wyjaśni to zjawisko. Zdecydowaliśmy się analizę dróg rowerowych, ponieważ jesteśmy fanami kolarstwa szosowego i czujemy potrzebę lepszego poznania rozkładu przestrzennego dróg, aby w przyszłości stworzyć atlas z poradami dla rowerzystów ekonomistów. &lt;p&gt;
 Zmienne objaśniające, czyli te które mogą determinować długość dróg rowerowych w poszczególnych województwach:
@@ -735,7 +735,7 @@ Najwięcej kilometrów dróg rowerowych jest w województwie mazowieckim. Drugie
 
 
 
-## Badanie zależności przestrzennych zmiennej objaśniającej
+### Badanie zależności przestrzennych
 .panelset[
 .panel[.panel-name[Hipoteza]
 
@@ -789,7 +789,7 @@ class: center, middle
 Szukanie modelu, który najlepiej wyjaśni badane zjawisko
 
 ---
-### Model OLS - Model przyczynowo-skutkowy bez interakcji przestrzennych
+### Model OLS
 .panelset[
 .panel[.panel-name[Opis modelu]
 
@@ -881,7 +881,7 @@ Zmienne: `zaludnienie` i `samochody` są nieistotne, jednak test Morana wskazuje
 ]
 ]
 ---
-### Testowanie model OLS 
+### Testowanie modelu OLS 
 .panelset[
 
 .panel[.panel-name[Test Morana]
@@ -1227,7 +1227,7 @@ HA: Różnica między oszacowniami MNW i MNK jest istotna, wybieramy model SEM &
 ---
 
 &lt;br&gt;
-### SLX model/SCM - Spatial Cross-Regressive Model
+### SLX model/SCM
 .pull-left[
 &lt;small&gt;
 **Model SLX (Spatial Lag of X) lub SCM (Spatial Cross-Regressive Model)** to modele ekonometryczne stosowane do analizy danych przestrzennych, które uwzględniają wpływ przestrzennych opóźnień zmiennych niezależnych na zmienną zależną. 
